@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jays Heating and Air Conditioning, LLC</title>
+  <link rel="stylesheet" href="style.css"/>
+
+
+  <style>
+
+    /* CSS */
+
+
+    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* NAV BAR*/
+
+.navbar {
+  background: #131313;
+  height: 80; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+} 
+
+#navbar__title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  color:#FF9900;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item{
+  height: 80px;
+}
+
+.navbar__links{
+  color: #FF9900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+} 
+
+.navbar__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  padding-left: 15px;
+  height: 100%;
+  width: 75%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #FF9900;
+  color:#131313
+}
+
+.button:hover{
+  background:black;
+  color: #FF9900;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  background: #FF9900;
+  color: black;
+  transition: all 0.3s ease;
+  border: solid;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__container {
+    display:flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0; 
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background: #131313;
+  }
+
+  .navbar__menu.active {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 999;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+  #navbar__title {
+    padding-left: 25px;
+ }
+ .navbar__toggle.bar {
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   transition: all 0.3s ease-in-out;
+   background: black;
+ }
+ .navbar__item {
+   width: 100%;
+ }
+.navbar__links {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+}
+
+}
+.navbar_btn {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+} 
+.navbar__toggle .bar {
+  display: block;
+  cursor: pointer;
+}
+
+img.small__logo{
+width: 250px; 
+height: 140px;
+margin: 0;
+}
+
+
+/* Main Content */
+
+
+.main {
+  background-color: white;
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+/*.main__content h1 {
+  margin-top: 4rem;
+  font-size: 2rem;
+  background-color: white;
+  background-color: black;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+*/
+
+
+/*.main__content h2 {
+  font-size: 4 rem;
+  background-color: black;
+  background-color: black;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+*/
+
+/*
+.main__content p {
+  margin-top:  1rem;
+  font-size:  2rem;
+  font-weight: 700;
+}
+*/
+
+.main__img--container {
+  float: right;
+  padding-right: 40px;
+  color:white;
+  text-align:center;
+}
+
+#main__img {
+  height: 80%;
+  width: 80%;
+  }
+
+   /*Services Section*/
+
+   .services {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 62vh;
+    margin: 4rem;
+  }
+ /* Here Is What We Have To Offer: */
+  .services h1 {
+    background-color: black;
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color:#FF9900;
+  }
+
+  /* Service list text */
+  .services__card p {
+    font-size: 1.35rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    color: #FF9900;
+    white-space: pre-line;
+  }
+/*
+  .services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+*/
+
+/*Service list box*/
+   .services__card {
+     margin: .75rem;
+     height: 400px;
+     width: 700px;
+     border-radius: 4px;
+     background-size: cover;
+   }
+
+/* Request a Quote Button */
+   .services__card button {
+     background-color: black;
+     color:#FF9900;
+     border: thick;
+     outline-style: ridge;
+     margin: 1rem;
+     padding: 0.5rem;
+     font-size: 1.4rem;
+     justify-content: center;   
+    }
+
+ /* Rescue discount text*/
+   .services h2 {
+     color: #FF9900;
+     text-align: center;
+     font-size: 1.1rem;
+     margin-top: 2.5rem;
+     margin-bottom: 2rem;
+     
+   }
+
+   .fb-page{
+     padding-top: 1.5rem;
+   }
+
+  /* Mobile Responsive */
+
+  @media screen and (max-width:768px) {
+    .main__container {
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+      justify-self: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 90vh;
+    }
+    
+    .main__content {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    .main__content h2 {
+      font-size: 3rem;
+    }
+
+    .main__content p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    .main__content h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+
+    .main__content h2 {
+      font-size: 2rem;
+    }
+
+    .main__content p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .main__btn {
+      padding: 12px 36px;
+      margin: 2.5rem 0;
+    }
+  }
+
+ 
+
+
+   /* End of CSS- Begin HTML */
+
+
+
+
+  
+  </style>
+  </head>
+<body>
+<!--HTML-->
+<!--Nav Bar-->
+<nav class="navbar">
+  <div class="navbar__container">
+  <img class = "small__logo" src= "Jays logos/Jays Heating & Air Conditioning optional-03 2.jpg" alt= "Logo"/>
+    <a href="/" id="navbar__title">-  Jays Heating and Air Conditioning, LLC  -</a>
+     </div>
+    <ul class="navbar__menu"> 
+      <li class="navbar__item"> 
+        <a href="/" class="navbar__links">Home</a> 
+      </li>
+      <li class="navbar__item">   
+        <a href="/services.html" class="navbar__links">Services</a>
+      </li>  
+       <li class="navbar__item">
+        <a href="/" class="navbar__links">Photo Gallery</a>
+      </li>
+      <li class="navbar__btn"> 
+        <a href="/" class="button">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+  <!--Main Content-->
+  <div class="main">
+    <div class="main__content"> 
+     
+      </div>
+      <div class="main__img--container">
+        <img src="Jays logos/Mascot.png" alt="Main Logo" id="main_logo" width="550" height="550">
+      </div>
+  </div>
+
+<!--Services Section-->
+<div class="services">
+  <h1>Here Is What We Have To Offer:</h1>
+  <div class="services__container">
+    <div class="services__card">
+      <p>
+        *Furnace and A/C Installs* <br>
+        *Hot Water Tank Replacement*<br>
+        *Whole Home Humidifiers and Dehumidifiers*<br>
+        *Air Cleaners/UV Lights*<br>
+        *Thermostats*<br>
+        * Free Estimates *
+      </p>
+      <h2> -If you are involved in animal rescue, fostering or have recently adopted an animal from a rescue, you will receive an additional discount-  </h2>
+      
+      <!--
+      <button>Request a Quote</button> !-->
+    </div> 
+    <!--<div class="services__card">
+      <h2>We also do A/C installs and Services</h2>
+      <p>Contact Us For More Information</p>
+      <button>Request a Quote</button>
+    </div> !-->
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="pAj7vWxB"></script>
+
+<div class="fb-page" data-href="https://www.facebook.com/JaysHVACPittsburgh/" data-tabs="" data-width="375px" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/JaysHVACPittsburgh/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JaysHVACPittsburgh/">Jays Heating and Air Conditioning</a></blockquote></div>
+
+  </div>
+
+  <script>src='script.js'</script>
+ </body>
+</html>     

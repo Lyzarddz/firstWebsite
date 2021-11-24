@@ -201,8 +201,7 @@ margin: 0;
   }
 
  /*About Us Section*/
-
- .about{
+.about{
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -219,21 +218,22 @@ margin: 0;
   margin-top: 1.5rem;
   font-size: 2.2rem;
 }
+
 /* *Serving the Greater Pittsburgh Area* */
 .about h2 {
   color:#FF9900;
-  font-size: 1.33rem;
+  font-size: 1.4rem;
   margin-top: 1.25rem;
 }
 
 .about p {
   color: #FF9900;
   text-align: center;
-  margin: 2rem;
-  font-size: 1.25rem;
-  letter-spacing: .75pt;
+  margin: 3rem;
+  font-size: 1.4rem;
+  letter-spacing: .8pt;
   text-align: left;
-  line-height: 1.75rem;
+  line-height: 2rem;
   margin-bottom: 1.5;
 }
 
@@ -243,10 +243,12 @@ margin: 0;
   flex-wrap: wrap;
  }
 
+ /*Sending Warm Wishes*/
    .about__card h2{
      color:#FF9900;
+     margin-top: 2.7rem;
      text-align: center;
-     font-size: 1.2rem;
+     font-size: 1.4rem;
    }
 
    .fb-page{
@@ -322,6 +324,8 @@ margin: 0;
   }
 
  
+
+
 
 
 

@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+ <!-- <script type="text/javascript">
+    function layoutHandler(){
+      var styleLink = document.getElementById("pagestyle");
+      if (window.innerWidth < 900 ){
+        styleLink.setAttribut("href", "mobile.css")
+      } else if (window.innerWidth < 1200){
+        styleLink.setAttribut("href", "medium.css")
+      } else {
+        styleLink.setAttribut("href", "large.css")
+      }
+    }   
+    window.onresize = layoutHandler;
+    layoutHandler();
+    </script> !-->
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jays Heating and Air Conditioning, LLC</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link id="pagestyle" rel="stylesheet" href="style.css"/>
   </head>
 <body>
 
@@ -56,9 +72,6 @@
   <div class="about__container">
     <div class="about__card">
       <h2>Sending Warm Wishes This Winter!</h2>
-      <!--
-      <button>Request a Quote</button>
-      !-->
     </div> 
   </div>
   </div>
